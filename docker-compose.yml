@@ -1,0 +1,15 @@
+version: "3.5"
+services:
+
+  api:
+    container_name: photo-api
+    build:
+      context: /
+      dockerfile: Dockerfile
+    command: /bin/sh -c "go run /api/main.go"
+    ports:
+      - 8080:8080
+    env_file:
+      - ./.env
+    volumes:
+      - /tmp:/tmp
