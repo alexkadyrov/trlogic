@@ -3,13 +3,12 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/alexkadyrov/trlogic/api/handlers"
 	"github.com/gin-gonic/gin"
-	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"net/http"
 	"os"
 	"os/signal"
 	"time"
-	"trlogic/api/handlers"
 )
 
 func main() {
