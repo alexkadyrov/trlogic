@@ -19,6 +19,13 @@ go run api/main.go
 docker-compose up
 </p>
 
+<p>
+Отправить POST запрос на адрес localhost:8080/photo с полями:
+file type="file"
+url type="text"
+base64image type="text"
+</p>
+
 <br>
 коллекция в постмане для тестирования:
 https://www.getpostman.com/collections/eeb06f4e4f2f15e80179
