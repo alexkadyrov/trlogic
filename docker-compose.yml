@@ -4,7 +4,7 @@ services:
   api:
     container_name: photo-api
     build:
-      context: /
+      context: .
       dockerfile: Dockerfile
     command: /bin/sh -c "go run /api/main.go"
     ports:
